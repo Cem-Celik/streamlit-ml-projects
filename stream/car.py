@@ -149,14 +149,14 @@ def get_dummy():
 def prediction(model,X):
     st.write(X)
     #test_dt_pca = prepro_pca(test_dt_pf)
-    #try:
-    st.write(read_data())
-        #st.write("Prob is : ",model.predict_proba(X).max())
-    
-    st.write("Our predict is ------> :")
-    st.write(model.predict(X))
-    #except:
-    st.write("An exception occurred")
+    try:
+        st.write(read_data())
+            #st.write("Prob is : ",model.predict_proba(X).max())
+
+        st.write("Our predict is ------> :")
+        st.write(model.predict(X))
+    except:
+        st.write("An exception occurred")
     return X
     
 def set_image():
