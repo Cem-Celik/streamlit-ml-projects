@@ -136,7 +136,7 @@ def get_dummy():
         "Location" : [st.sidebar.selectbox('What is your Location to sell?',('Mumbai', 'Pune', 'Chennai', 'Coimbatore', 'Hyderabad', 'Jaipur',
        'Kochi', 'Kolkata', 'Delhi', 'Bangalore', 'Ahmedabad'),index = 7)],
         "Year" : [st.sidebar.number_input("What is the production of your car?",1950,2021,value = 2010)],
-        "Kilometers_Driven" : [st.sidebar.number_input("Front Camera",value = 35000)],
+        "Kilometers_Driven" : [st.sidebar.number_input("How many kilometers was the car driven?",value = 35000)],
         "Fuel_Type" : [st.sidebar.selectbox('What is fuel type of your car?',('CNG', 'Diesel', 'Petrol', 'LPG'),index=1)],
         "Transmission" : [st.sidebar.selectbox('What is transmission type of your car?',('Manual', 'Automatic'),index=1)],
         "Owner_Type" : [st.sidebar.selectbox('How much people used this car before?',('First', 'Second', 'Third', 'Fourth & Above'),index =0)],
