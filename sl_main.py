@@ -27,7 +27,7 @@ import telco
 import ibm
 import carCustomer
 import titanic
-import whatsapp
+#import whatsapp
 #import sys
 #sys.path.insert(0, 'C:/Users/cemce/Desktop/data science/project_2/stream/car_price')
 #import car
@@ -42,7 +42,7 @@ def main():
     ibm_df = ibm.read_data()
     car_customer_df = carCustomer.read_data()
     titanic_df = titanic.read_data()
-    whatsapp_df = whatsapp.read_data()
+    #whatsapp_df = whatsapp.read_data()
     
     page_main = st.sidebar.selectbox("Choose a project", ["Homepage", "Mobile Price Classification","Car Price Regression","Telco Churn Classification","IBM Employee Attrition Classification","Car Customer Segmentation","Titanic Survive Classification"])
     if page_main == "Homepage":    
@@ -60,8 +60,8 @@ def main():
         carCustomer.carCustomer(car_customer_df)
     elif page_main == "Titanic Survive Classification":
         titanic.titanic_surv(titanic_df)
-    elif page_main == "Web Whatsapp Status Emotion Classification":
-        whatsapp.wh(whatsapp_df)
+    #elif page_main == "Web Whatsapp Status Emotion Classification":
+        #whatsapp.wh(whatsapp_df)
         
         
 def set_image():
